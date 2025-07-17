@@ -1,53 +1,114 @@
-🗣️ Unified Voice & Text ChatBot with GUI
-This project is a simple rule-based chatbot built using Python that supports both text and voice interactions through a clean graphical user interface (GUI). It integrates speech recognition, wake-word detection, and text-to-speech to act as a lightweight virtual assistant.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unified Voice & Text ChatBot with GUI</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-📌 Features
-💬 Chat via text or voice.
-🎙️ Wake word detection: activates voice mode when hearing "voice".
-🔈 Responds using text-to-speech.
-🧠 Handles speech input using speech recognition.
-🖼️ GUI built using Tkinter with scrollable conversation window.
-👋 Say "bye" to exit the assistant.
+    h1, h2 {
+      color: #2c3e50;
+    }
 
-🗂️ Project Structure
-voice-chatbot/
-├── main.py
-├── requirements.txt
-└── README.md
-⚙️ How It Works
-Launches a Tkinter-based GUI for chat.
-When the word "voice" is detected in input, it enters voice mode.
-Listens to the user's voice and processes it using speech_recognition.
-Responds based on simple rule-based logic.
-Listens again or exits if the user says "bye".
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
 
-🧪 Installation & Usage
-🔧 Requirements
-Install required dependencies:
-bash
-pip install -r requirements.txt
-Make sure you have a working microphone and speaker.
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
 
-▶️ Run the Project
-bash
-python main.py
-You can switch between text and voice input. Just type or say "voice" to activate voice mode.
+    .folder-structure {
+      background: #eef;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+    }
 
-🔁 Example Output
+    ul {
+      list-style: "🔹 ";
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>🗣️ Unified Voice & Text ChatBot with GUI</h1>
+  <p>This project is a simple rule-based chatbot built using Python that supports both <strong>text</strong> and <strong>voice interactions</strong> through a clean graphical user interface (GUI). It integrates speech recognition, wake-word detection, and text-to-speech to act as a lightweight virtual assistant.</p>
+
+  <h2>📌 Features</h2>
+  <ul>
+    <li>💬 Chat via text or voice.</li>
+    <li>🎙️ Wake word detection: activates voice mode when hearing <code>"voice"</code>.</li>
+    <li>🔈 Responds using text-to-speech.</li>
+    <li>🧠 Handles speech input using <code>speech_recognition</code>.</li>
+    <li>🖼️ GUI built using Tkinter with scrollable conversation window.</li>
+    <li>👋 Say <code>"bye"</code> to exit the assistant.</li>
+  </ul>
+
+  <h2>🗂️ Project Structure</h2>
+  <div class="folder-structure">
+    voice-chatbot/<br>
+    ├── main.py<br>
+    ├── requirements.txt<br>
+    └── README.md
+  </div>
+
+  <h2>⚙️ How It Works</h2>
+  <ul>
+    <li>Launches a Tkinter-based GUI for chat.</li>
+    <li>When the word <code>"voice"</code> is detected, it enters voice mode.</li>
+    <li>Listens to the user's voice via microphone.</li>
+    <li>Processes voice input using speech recognition and responds with rules.</li>
+    <li>Say <code>"bye"</code> to exit voice mode.</li>
+  </ul>
+
+  <h2>🧪 Installation & Usage</h2>
+  <h3>🔧 Requirements</h3>
+  <p>Install dependencies:</p>
+  <pre><code>pip install -r requirements.txt</code></pre>
+  <p>Ensure you have a working microphone and speaker.</p>
+
+  <h3>▶️ Run the Project</h3>
+  <pre><code>python main.py</code></pre>
+  <p>Type or say <code>"voice"</code> to activate voice mode.</p>
+
+  <h2>🔁 Example Output</h2>
+  <pre>
 You: voice
 (Chatbot switches to voice mode)
 You (speaking): Hello
 Bot (speaks): Hello! How can I help you?
 You (speaking): bye
 Bot (speaks): Goodbye!
+  </pre>
 
-🧠 Concepts Used
-Rule-Based Logic
-Wake Word Detection
-Speech Recognition (speech_recognition)
-Text-to-Speech (pyttsx3)
-GUI Programming with Tkinter
+  <h2>🧠 Concepts Used</h2>
+  <ul>
+    <li>Rule-Based Logic</li>
+    <li>Wake Word Detection</li>
+    <li>Speech Recognition (<code>speech_recognition</code>)</li>
+    <li>Text-to-Speech (<code>pyttsx3</code>)</li>
+    <li>GUI Programming with Tkinter</li>
+  </ul>
 
-👨‍💻 Author
-Made using Python by [AARADHY SRIVASTAVA].
+  <h2>👨‍💻 Author</h2>
+  <p>Made using Python by <strong>Aaradhy Srivastava</strong>.</p>
+
+</body>
+</html>
